@@ -1,0 +1,5 @@
+plasma-distro-release-notifier (20220521-0ubuntu1) UNRELEASED; urgency=medium
+
+  * Initial release.
+
+ -- Erich Eickmeyer <eeickmeyer@ubuntu.com>  Thu, 08 Sep 2022 07:42:51 -0700

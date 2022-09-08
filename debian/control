@@ -1,0 +1,29 @@
+Source: plasma-distro-release-notifier
+Section: kde
+Priority: optional
+Maintainer: Erich Eickmeyer <eeickmeyer@ubuntu.com>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+ libkf5coreaddons-dev,
+ libkf5dbusaddons-dev,
+ libkf5networkmanagerqt-dev,
+ libqt5core5a,
+ libqt5gui5,
+ libqt5widgets5,
+Standards-Version: 4.6.1
+Homepage: https://invent.kde.org/system/distro-release-notifier
+Vcs-Browser: https://invent.kde.org/system/distro-release-notifier
+Vcs-Git: https://invent.kde.org/system/distro-release-notifier.git
+
+Package: plasma-distro-release-notifier
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ update-notifier-core
+Description: Notifies KDE Plasma users of a new version of Ubuntu
+ New versions of Ubuntu get released every six months, with new
+ LTS versions getting released every two years. This application
+ monitors for new versions and notifies the user if a new version
+ of Ubuntu is available.
