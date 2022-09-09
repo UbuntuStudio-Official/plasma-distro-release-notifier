@@ -5,9 +5,14 @@ Maintainer: Erich Eickmeyer <eeickmeyer@ubuntu.com>
 Rules-Requires-Root: no
 Build-Depends:
  debhelper-compat (= 13),
+ cmake,
+ extra-cmake-modules,
  libkf5coreaddons-dev,
  libkf5dbusaddons-dev,
+ libkf5i18n-dev,
+ libkf5kio-dev,
  libkf5networkmanagerqt-dev,
+ libkf5notifications-dev,
  libqt5core5a,
  libqt5gui5,
  libqt5widgets5,
