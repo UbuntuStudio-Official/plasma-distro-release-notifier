@@ -26,7 +26,7 @@ Architecture: any
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
- update-notifier-core
+ update-notifier-common
 Description: Notifies KDE Plasma users of a new version of Ubuntu
  New versions of Ubuntu get released every six months, with new
  LTS versions getting released every two years. This application
