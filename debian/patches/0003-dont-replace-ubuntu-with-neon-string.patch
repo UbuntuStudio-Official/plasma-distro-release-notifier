@@ -1,0 +1,27 @@
+From 3ccdd3cebb1bbaf9652778e8260cafd2e8f68e7b Mon Sep 17 00:00:00 2001
+Message-Id: <3ccdd3cebb1bbaf9652778e8260cafd2e8f68e7b.1663007390.git.erich@ericheickmeyer.com>
+In-Reply-To: <be403f1a6f97f9b52359cfec1a3e78f86f89cb50.1663007390.git.erich@ericheickmeyer.com>
+References: <be403f1a6f97f9b52359cfec1a3e78f86f89cb50.1663007390.git.erich@ericheickmeyer.com>
+From: Erich Eickmeyer <erich@ericheickmeyer.com>
+Date: Mon, 12 Sep 2022 11:28:10 -0700
+Subject: [PATCH 3/4] dont replace ubuntu with neon string
+
+---
+ src/upgraderprocess.cpp | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/src/upgraderprocess.cpp b/src/upgraderprocess.cpp
+index a7c8e78..abfefbc 100644
+--- a/src/upgraderprocess.cpp
++++ b/src/upgraderprocess.cpp
+@@ -106,7 +106,6 @@ void UpgraderProcess::onUnexpectedFinish(int code)
+ 
+     auto editor = new QTextEdit(&dialog);
+     editor->setReadOnly(true);
+-    editor->setText(m_output.replace(QStringLiteral("ubuntu"), QStringLiteral("neon"), Qt::CaseInsensitive));
+     layout->addWidget(editor);
+ 
+     auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Close, &dialog);
+-- 
+2.37.2
+

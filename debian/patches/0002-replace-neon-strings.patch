@@ -1,0 +1,37 @@
+From d476dfb9eb485dc682e48eac0642f69903cb075c Mon Sep 17 00:00:00 2001
+Message-Id: <d476dfb9eb485dc682e48eac0642f69903cb075c.1663007390.git.erich@ericheickmeyer.com>
+In-Reply-To: <be403f1a6f97f9b52359cfec1a3e78f86f89cb50.1663007390.git.erich@ericheickmeyer.com>
+References: <be403f1a6f97f9b52359cfec1a3e78f86f89cb50.1663007390.git.erich@ericheickmeyer.com>
+From: Erich Eickmeyer <erich@ericheickmeyer.com>
+Date: Mon, 12 Sep 2022 11:25:31 -0700
+Subject: [PATCH 2/4] replace neon strings
+
+---
+ src/notifier.cpp | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/src/notifier.cpp b/src/notifier.cpp
+index 5b59d48..f8224ef 100644
+--- a/src/notifier.cpp
++++ b/src/notifier.cpp
+@@ -19,7 +19,7 @@ void Notifier::show(const QString &name, const QString &version, const QDate &eo
+     // Delayed init. Otherwise we have the KSNI up when no upgrades are available.
+     init();
+ 
+-    const QString label = i18nc("KDE neon on 18.04", "%1 on %2", name, version);
++    const QString label = i18nc("Ubuntu on 18.04", "%1 on %2", name, version);
+ 
+     const QString title = i18n("Upgrade available");
+     QString text = i18n("%1.", label);
+@@ -30,7 +30,7 @@ void Notifier::show(const QString &name, const QString &version, const QDate &eo
+     } else if (!eolDate.isNull()) {
+         text.append(
+             i18nc("Warning notice with emoji",
+-                  "\nThis version will no longer receive updates or security fixes from KDE neon.\n%1 Upgrade Now!",
++                  "\nThis version will no longer receive updates or security fixes from Ubuntu.\n%1 Upgrade Now!",
+                   QStringLiteral("☢")));
+     }
+     const QString icon = QStringLiteral("system-software-update");
+-- 
+2.37.2
+

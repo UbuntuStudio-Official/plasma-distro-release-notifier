@@ -1,0 +1,28 @@
+From 21a2559f86bbf83eea3e692424d8d5b263ed2f54 Mon Sep 17 00:00:00 2001
+Message-Id: <21a2559f86bbf83eea3e692424d8d5b263ed2f54.1663007390.git.erich@ericheickmeyer.com>
+In-Reply-To: <be403f1a6f97f9b52359cfec1a3e78f86f89cb50.1663007390.git.erich@ericheickmeyer.com>
+References: <be403f1a6f97f9b52359cfec1a3e78f86f89cb50.1663007390.git.erich@ericheickmeyer.com>
+From: Erich Eickmeyer <erich@ericheickmeyer.com>
+Date: Mon, 12 Sep 2022 11:29:38 -0700
+Subject: [PATCH 4/4] set ubuntu version
+
+---
+ src/notifier.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/notifier.cpp b/src/notifier.cpp
+index f8224ef..99cdc88 100644
+--- a/src/notifier.cpp
++++ b/src/notifier.cpp
+@@ -19,7 +19,7 @@ void Notifier::show(const QString &name, const QString &version, const QDate &eo
+     // Delayed init. Otherwise we have the KSNI up when no upgrades are available.
+     init();
+ 
+-    const QString label = i18nc("Ubuntu on 18.04", "%1 on %2", name, version);
++    const QString label = i18nc("Ubuntu on 22.10", "%1 on %2", name, version);
+ 
+     const QString title = i18n("Upgrade available");
+     QString text = i18n("%1.", label);
+-- 
+2.37.2
+

@@ -1,3 +1,11 @@
+plasma-distro-release-notifier (20220521-0ubuntu2) kinetic; urgency=medium
+
+  * d/rules: add hardening=+all
+  * d/control: depand on python3-update-manager explicitly
+  * Add patches s/neon/ubuntu
+
+ -- Erich Eickmeyer <eeickmeyer@ubuntu.com>  Mon, 12 Sep 2022 11:36:49 -0700
+
 plasma-distro-release-notifier (20220521-0ubuntu1) kinetic; urgency=medium
 
   * Initial release. (LP: #1989229)

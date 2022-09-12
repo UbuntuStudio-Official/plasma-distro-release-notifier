@@ -27,6 +27,7 @@ Depends:
  ${shlibs:Depends},
  ${misc:Depends},
  python3,
+ python3-update-manager,
  update-notifier-common
 Description: Notifies KDE Plasma users of a new version of Ubuntu
  New versions of Ubuntu get released every six months, with new
