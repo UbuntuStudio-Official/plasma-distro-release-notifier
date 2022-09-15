@@ -1,3 +1,9 @@
+plasma-distro-release-notifier (20220915-0ubuntu1) kinetic; urgency=medium
+
+  * New upstream tarball release with translations (LP: #1989697)
+
+ -- Erich Eickmeyer <eeickmeyer@ubuntu.com>  Thu, 15 Sep 2022 14:19:28 -0700
+
 plasma-distro-release-notifier (20220521-0ubuntu2) kinetic; urgency=medium
 
   * d/rules: add hardening=+all
