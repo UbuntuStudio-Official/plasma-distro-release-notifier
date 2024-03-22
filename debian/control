@@ -13,9 +13,7 @@ Build-Depends:
  libkf5kio-dev,
  libkf5networkmanagerqt-dev,
  libkf5notifications-dev,
- libqt5core5a,
- libqt5gui5,
- libqt5widgets5,
+ qtbase5-dev
 Standards-Version: 4.6.1
 Homepage: https://invent.kde.org/system/distro-release-notifier
 Vcs-Browser: https://invent.kde.org/system/distro-release-notifier

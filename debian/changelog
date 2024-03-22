@@ -1,3 +1,15 @@
+plasma-distro-release-notifier (20220915-0ubuntu4) noble; urgency=medium
+
+  * d/control: b-d qtbase5-dev (LP:#2058780)
+
+ -- Erich Eickmeyer <eeickmeyer@ubuntu.com>  Fri, 22 Mar 2024 14:54:35 -0700
+
+plasma-distro-release-notifier (20220915-0ubuntu3) noble; urgency=medium
+
+  * No-change rebuild against libqt5core5t64
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Fri, 15 Mar 2024 06:26:05 +0000
+
 plasma-distro-release-notifier (20220915-0ubuntu2) noble; urgency=medium
 
   * Update patch to report correct version (LP: #2039497)
