@@ -1,4 +1,4 @@
-0001-get-eol-info-from-lp-src.patch
+0001-get-eol-info-from-github-src.patch
 0002-replace-neon-strings.patch
 0003-dont-replace-ubuntu-with-neon-string.patch
 0004-set-ubuntu-version.patch
