@@ -19,7 +19,7 @@ index f8224ef..99cdc88 100644
      init();
  
 -    const QString label = i18nc("Ubuntu on 18.04", "%1 on %2", name, version);
-+    const QString label = i18nc("Ubuntu on 24.04", "%1 on %2", name, version);
++    const QString label = i18nc("Ubuntu on 24.10", "%1 on %2", name, version);
  
      const QString title = i18n("Upgrade available");
      QString text = i18n("%1.", label);
