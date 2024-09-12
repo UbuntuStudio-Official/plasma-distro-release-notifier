@@ -2,7 +2,7 @@ From be403f1a6f97f9b52359cfec1a3e78f86f89cb50 Mon Sep 17 00:00:00 2001
 Message-Id: <be403f1a6f97f9b52359cfec1a3e78f86f89cb50.1663007390.git.erich@ericheickmeyer.com>
 From: Erich Eickmeyer <erich@ericheickmeyer.com>
 Date: Mon, 12 Sep 2022 11:08:30 -0700
-Subject: [PATCH 1/4] get-eol-info-from-github-src
+Subject: [PATCH 1/4] get-eol-info-from-file-src
 
 ---
  src/distroreleasenotifier.cpp | 2 +-
@@ -12,12 +12,12 @@ diff --git a/src/distroreleasenotifier.cpp b/src/distroreleasenotifier.cpp
 index 1bf7138..fa2ceee 100644
 --- a/src/distroreleasenotifier.cpp
 +++ b/src/distroreleasenotifier.cpp
-@@ -137,7 +137,7 @@ void DistroReleaseNotifier::checkReleaseUpgradeFinished(int exitCode)
+@@ -137,7 +137,6 @@ void DistroReleaseNotifier::checkReleaseUpgradeFinished(int exitCode)
      connect(manager, &QNetworkAccessManager::finished,
              this, &DistroReleaseNotifier::replyFinished);
  
 -    auto request = QNetworkRequest(QUrl(QStringLiteral("https://releases.neon.kde.org/eol.json")));
-+    auto request = QNetworkRequest(QUrl(QStringLiteral("https://raw.githubusercontent.com/UbuntuStudio-Official/plasma-distro-release-notifier/eol/eol.json")));
++    auto request = QNetworkRequest(QUrl(QStringLiteral("file:///usr/share/distro-release-notifier/eol.json")));
      request.setAttribute(QNetworkRequest::FollowRedirectsAttribute, true);
      manager->get(request);
  }

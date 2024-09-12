@@ -3,3 +3,7 @@ export DEB_BUILD_OPTIONS=hardening=+all
 
 %:
 	dh $@
+
+override_dh_auto_install:
+	dh_auto_install
+	cp debian/eol.json debian/plasma-distro-release-notifier/usr/share/distro-release-notifier
