@@ -1,3 +1,9 @@
+plasma-distro-release-notifier (20220915-0ubuntu8) oracular; urgency=medium
+
+  * Move EOL data to local file (LP: #2039492)
+
+ -- Erich Eickmeyer <eeickmeyer@ubuntu.com>  Wed, 11 Sep 2024 17:56:03 -0700
+
 plasma-distro-release-notifier (20220915-0ubuntu7) oracular; urgency=medium
 
   * Move EOL data to Github (LP: #2039492)
