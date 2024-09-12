@@ -12,7 +12,7 @@ diff --git a/src/distroreleasenotifier.cpp b/src/distroreleasenotifier.cpp
 index 1bf7138..fa2ceee 100644
 --- a/src/distroreleasenotifier.cpp
 +++ b/src/distroreleasenotifier.cpp
-@@ -137,7 +137,6 @@ void DistroReleaseNotifier::checkReleaseUpgradeFinished(int exitCode)
+@@ -137,7 +137,7 @@ void DistroReleaseNotifier::checkReleaseUpgradeFinished(int exitCode)
      connect(manager, &QNetworkAccessManager::finished,
              this, &DistroReleaseNotifier::replyFinished);
  
